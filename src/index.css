@@ -67,8 +67,7 @@ body {
 .arrayElement {
   margin-top: 15px;
   margin-bottom: 15px;
+  font-size: larger;
 }
 
-.arrayElement > li {
-  list-style: none;
-}
+

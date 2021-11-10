@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-export const DateTime = () => {
+export const DateTime = (input) => {
     var [date, setDate] = useState(new Date());
 
     useEffect(() =>{
