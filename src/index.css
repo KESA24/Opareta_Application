@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -15,7 +15,7 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid #21ce99;
+  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
 }
@@ -38,36 +38,75 @@ body {
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
-  font-weight: 500;
   font-family: inherit;
-  margin-left: 60%;
 }
 
-.DateTime {
-  margin: auto;
-  width: 100%;
-  font-size: 20px;
+.btn:focus {
+  outline: none;
 }
 
-.DateTime > p {
-  padding-top: 10px;
+.btn:active {
+  transform: scale(0.98);
 }
 
-.divArray {
-  margin: auto;
+.btn-block {
+  display: block;
   width: 100%;
 }
 
-.divArray > hr {
-  color: #21ce99;
-  background-color: #21ce99;
-  margin: 0;
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
-.arrayElement {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: larger;
+.task.reminder {
+  border-left: 5px solid green;
 }
 
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}

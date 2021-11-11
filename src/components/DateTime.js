@@ -13,7 +13,7 @@ export const DateTime = (input) => {
     });
     return (
         <div className="DateTime">
-            <h4 style={{fontWeight: 'bolder', color: '#21ce99', fontSize:'20px'}}>Hello there; </h4>
+            <h4 >Hello there; </h4>
             <p>Today(MM/DD/YY) is the :{' ' + date.toLocaleDateString()}</p>
             <p>And the time is:{'   ' + date.toLocaleTimeString()}</p>
             
